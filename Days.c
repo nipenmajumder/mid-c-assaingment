@@ -1,13 +1,9 @@
 #include <stdio.h>
-
 int main()
 {
     int week;
-
-    /* Input week number from user */
-    printf("Enter the no. of day: ");
+    printf("Enter the no. of day:");
     scanf("%d", &week);
-
     switch(week)
     {
         case 1:
@@ -34,6 +30,5 @@ int main()
         default:
             printf("Invalid input");
     }
-
     return 0;
 }

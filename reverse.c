@@ -1,19 +1,19 @@
 #include <stdio.h>
-
 int main()
 {
-    int n;
+  int n, r = 0;
 
-    /*
-     * Input a number from user
-     */
-    scanf("%d", &n);
+  printf("Input number: ");
+  scanf("%d", &n);
 
-    while(n>=1)
-    {
-        printf("%d ", n);
-        n--;
-    }
+  while (n != 0)
+  {
+    r = r * 10;
+    r = r + n%10;
+    n = n/10;
+  }
 
-    return 0;
+  printf("Reverse of  = %d", r);
+
+  return 0;
 }
